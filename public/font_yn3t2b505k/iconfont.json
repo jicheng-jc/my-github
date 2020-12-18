@@ -1,0 +1,149 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1000809",
+      "name": "play",
+      "font_class": "play",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "6818249",
+      "name": "technology_floppy",
+      "font_class": "technology_floppy",
+      "unicode": "ef48",
+      "unicode_decimal": 61256
+    },
+    {
+      "icon_id": "6818252",
+      "name": "technology_graphic-t",
+      "font_class": "technology_graphic-t",
+      "unicode": "ef49",
+      "unicode_decimal": 61257
+    },
+    {
+      "icon_id": "6818254",
+      "name": "technology_usb-cable",
+      "font_class": "technology_usb-cable",
+      "unicode": "ef4a",
+      "unicode_decimal": 61258
+    },
+    {
+      "icon_id": "6818261",
+      "name": "technology_laptop",
+      "font_class": "technology_laptop",
+      "unicode": "ef4b",
+      "unicode_decimal": 61259
+    },
+    {
+      "icon_id": "6818265",
+      "name": "technology_page-bits",
+      "font_class": "technology_page-bits",
+      "unicode": "ef4c",
+      "unicode_decimal": 61260
+    },
+    {
+      "icon_id": "6818270",
+      "name": "technology_pro-micro",
+      "font_class": "technology_pro-micro",
+      "unicode": "ef4d",
+      "unicode_decimal": 61261
+    },
+    {
+      "icon_id": "6818281",
+      "name": "technology_camcorder",
+      "font_class": "technology_camcorder",
+      "unicode": "ef50",
+      "unicode_decimal": 61264
+    },
+    {
+      "icon_id": "6818282",
+      "name": "technology_connectio",
+      "font_class": "technology_connectio",
+      "unicode": "ef51",
+      "unicode_decimal": 61265
+    },
+    {
+      "icon_id": "6818285",
+      "name": "technology_digital-w",
+      "font_class": "technology_digital-w",
+      "unicode": "ef52",
+      "unicode_decimal": 61266
+    },
+    {
+      "icon_id": "6818287",
+      "name": "technology_digital-m",
+      "font_class": "technology_digital-m",
+      "unicode": "ef53",
+      "unicode_decimal": 61267
+    },
+    {
+      "icon_id": "6818289",
+      "name": "technology_electroni",
+      "font_class": "technology_electroni",
+      "unicode": "ef54",
+      "unicode_decimal": 61268
+    },
+    {
+      "icon_id": "9457342",
+      "name": "logo-usd",
+      "font_class": "logo-usd",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "12002351",
+      "name": "cctv, security, technology",
+      "font_class": "cctvsecuritytechnology",
+      "unicode": "ea28",
+      "unicode_decimal": 59944
+    },
+    {
+      "icon_id": "12002399",
+      "name": "cctv, security, technology",
+      "font_class": "cctvsecuritytechnology1",
+      "unicode": "ea2d",
+      "unicode_decimal": 59949
+    },
+    {
+      "icon_id": "13522896",
+      "name": "风衣",
+      "font_class": "fengyi",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "13522905",
+      "name": "袜子",
+      "font_class": "wazi",
+      "unicode": "e6e2",
+      "unicode_decimal": 59106
+    },
+    {
+      "icon_id": "15838431",
+      "name": "arrow-right",
+      "font_class": "arrow-right",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "15838561",
+      "name": "arrow-left-bold",
+      "font_class": "arrow-left-bold",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "16092351",
+      "name": "icons8-technology_lifestyle 1",
+      "font_class": "icons8-technology_lifestyle1",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    }
+  ]
+}

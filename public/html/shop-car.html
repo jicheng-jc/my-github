@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shouye.css">
+    <link rel="stylesheet" href="../../font_8d2ubg6zqpl/iconfont.css">
+    <link rel="stylesheet" href="../../font_qhuipiix6z/iconfont.css">
+    <link rel="stylesheet" href="../../font_yn3t2b505k/iconfont.css">
+    <script src="../js/shop-car.js" type="module"></script>
+    <style>
+        body,div,a,img{padding: 0;margin: 0;font-size: 12px;color: #666;}
+a{text-decoration: none;}
+.clear{clear: both;}
+.buyCar{width: 1000px;height: 450px;margin: 0 auto;}
+.top{width: 1000px;height: 40px;line-height: 40px;background-color: #f3f3f3;border: 1px solid #f1f1f1;}
+.box1{width: 130px;float: left;}
+.box1 input{position: relative;top: 2px;}
+.box2{width: 440px;float: left;}
+.box3{width: 100px;float: left;text-align: center;}
+.box4{width: 100px;float: left;text-align: center;}
+.box5{width: 130px;float: left;text-align: center;}
+.box6{width: 100px;float: left;}
+.top2{width: 1000px;height: 40px;border-bottom: 2px solid #aaa;}
+
+.middle{width: 1000px;border: 1px solid #f1f1f1;}
+.goods{width: 1000px;height: 120px;padding-top: 18px;background-color: #fff4e8;}
+.box11{width: 130px;float: left;}
+.box11 img{width: 80px;height: 80px;vertical-align: top;}
+.box12{width: 210px;float: left;color: #333;}
+.jingzao{color: #fff;background-color: #e2231a;display: inline-block;width: 28px;height: 15px;line-height: 15px;text-align: center;}
+.shengxian{color: #02c555;border: 1px solid #02c555;display: inline-block;width: 28px;height: 15px;line-height: 15px;text-align: center;}
+.box13{width: 230px;float: left;text-indent: 20px;}
+.box14{width: 100px;float: left;text-align: center;color: #333;letter-spacing: 0.5px;}
+.box15{width: 100px;float: left;text-align: center;}
+.box15 .addLow{display: inline-block;width: 16px;height: 22px;border: 1px solid #cacbcb;position: relative;top: -4px;line-height: 22px;cursor: pointer;}
+.box15 .num{display: inline-block;width: 46px;height: 22px;border-top: 1px solid #cacbcb;border-bottom: 1px solid #cacbcb;position: relative;top: -4px;line-height: 22px;}
+.box16{width: 130px;float: left;text-align: center;}
+.box16 div{font-weight: bold;font-size: 13px;color: #000;letter-spacing: 1px;}
+.box17{width: 100px;float: left;}
+.goodsSpace{width: 1000px;height: 40px;border-top: 1px solid #ccc;}
+
+.bottom{width: 1000px;height: 50px;border: 1px solid #f0f0f0;line-height: 50px;margin-top: 20px;}
+.bottom .left{width: 320px;height: 50px;float: left;}
+.bottom .left input{position: relative;top: 2px;}
+.bottom .left a{margin-left: 8px;}
+.bottom .left .clearCar{font-weight: bold;}
+.bottom .right{width: 380px;height: 50px;float: right;}
+.bottom .right .allPrice{width: 260px;height: 40px;margin-top: 5px;float: left;line-height: 16px;}
+.bottom .right .allPrice .str{margin-right: 38px;}
+.bottom .right .allPrice .fontColor1{color: #f00;font-weight: bold;margin: 0 3px;}
+.bottom .right .allPrice .fontColor2{color: #f00;font-weight: bold;font-size: 16px;}
+.bottom .right .balance{width: 96px;height: 50px;background-color: #e64346;color: #fff;font-size: 18px;font-weight: bold;line-height: 50px;text-align: center;float: right;cursor: pointer;}
+    </style>
+   
+</head>
+<body>
+    <div class="banxin-car">
+       
+        <div class="top">
+            <div class="box1">
+               <input type="checkbox" class="allSelect" id="allSelect" checked >
+               <label for="allSelect">全选</label>
+            </div>
+            <div class="box2">商品</div>
+            <div class="box3">单价</div>
+            <div class="box4">数量</div>
+            <div class="box5">小计</div>
+            <div class="box6">操作</div>
+         </div>
+
+    </div>
+    <div>
+        <div class="bottom" style="margin: auto;">
+            <!-- <div class="left">
+               <input type="checkbox" class="">
+               <label for="allSelect">全选</label>
+               <a href="#">删除选中的商品</a>
+               <a href="#">移到我的关注</a>
+               <a href="#" class="clearCar">清理购物车</a>
+            </div> -->
+            <div class="right">
+               
+               <div class="allPrice">
+                  <div>
+                     <span class="str">
+                        已选择
+                        <span class="fontColor1">0</span>件商品
+                  </span>总价：
+                      <span class="fontColor2">&yen;<span class="allPrice1" id="finalPrice">0.00</span></span></div>
+                 </div>
+               <div class="balance" >去结算</div>
+            </div>
+         </div>
+    </div>
+
+    <!-- <li>  <input type="checkbox"></li>
+                    
+    //     <li><img src="../${picture[0].src}" alt=""><h2>${elm.title}</h2></li>
+    //     <li>${(elm.price).toFixed(2)}元</li>
+    //     <li> <input type="" value="${arr[0].num}" min="1" max="${elm.num}" ></li>
+    //     <li>${(elm.price*arr[0].num).toFixed(2)}元</li>
+    //     <li>删除</li>
+     -->
+
+</body>
+</html>

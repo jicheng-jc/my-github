@@ -1,0 +1,653 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+i {
+  font-style: normal;
+}
+.nav1 {
+  height: 40px;
+  background: black;
+}
+.nav1 .banxin1 {
+  height: 40px;
+  width: 1180px;
+  margin: 0 auto;
+}
+.nav1 .banxin1 a {
+  line-height: 40px;
+  color: blanchedalmond;
+  font-size: 12px;
+}
+.nav1 .banxin1 li {
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+.nav1 .banxin1 span {
+  display: inline-block;
+  height: 10px;
+  width: 1px;
+  background: cadetblue;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-48%);
+}
+.nav1 .banxin1 .ul-left {
+  float: left;
+}
+.nav1 .banxin1 .ul-left li {
+  float: left;
+}
+.nav1 .banxin1 .ul-right {
+  float: right;
+}
+.nav1 .banxin1 .ul-right li {
+  float: left;
+}
+.nav2 {
+  position: relative;
+}
+.nav2 .banxin2 {
+  margin: 0 auto;
+  width: 1180px ;
+  height: 80px;
+  line-height: 80px;
+}
+.nav2 .banxin2 .icon-logo-usd {
+  display: inline-block;
+  font-size: 28px;
+  color: red;
+  height: 36px;
+  width: 44px;
+  margin-right: 5px;
+}
+.nav2 .banxin2 .span-f {
+  font-size: 28px;
+}
+.nav2 .banxin2 .ul-f {
+  height: 80px;
+  float: right;
+  padding-right: 100px;
+}
+.nav2 .banxin2 .ul-f > li {
+  float: left;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 25px;
+}
+.nav2 .banxin2 .ul-f > li:hover > a {
+  color: red;
+}
+.nav2 .banxin2 .ul-f > li:hover .div-t {
+  display: block;
+}
+.nav2 .banxin2 .ul-f > li .div-t {
+  width: 1520px;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  display: none;
+  z-index: 1000;
+  background: white;
+  padding-left: 195px;
+  border-top: solid 1px wheat;
+}
+.nav2 .banxin2 .ul-f > li .div-t .ul-t > li {
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.nav2 .banxin2 .ul-f > li .div-t .ul-t > li:after {
+  content: '';
+  height: 110px;
+  display: inline-block;
+  width: 1px;
+  background: wheat;
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+.nav2 .banxin2 .ul-f > li .div-t .ul-t > li:last-child:after {
+  content: '';
+  display: none;
+}
+.nav2 .banxin2 .ul-f > li .div-t .ul-t > li:hover .span-t1 {
+  color: red;
+}
+.nav2 .banxin2 .ul-f > li .div-t .ul-t > li > a {
+  display: inline-block;
+}
+.nav2 .banxin2 .ul-f > li .div-t .ul-t > li img {
+  width: 196px;
+  display: block;
+}
+.nav2 .banxin2 .ul-f > li .div-t .ul-t > li span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.nav2 .banxin2 .ul-f > li .div-t .ul-t > li .span-t2 {
+  color: red;
+}
+.nav2 .banxin2 .ul-f > li .div-t2 {
+  top: 80px;
+  left: 0px;
+}
+.nav2 .banxin2 .ul-f > li .div-t3 {
+  top: 80px;
+  left: 0px;
+}
+.nav2 .banxin2 .ul-f > li .div-t4 {
+  top: 80px;
+  left: 0px;
+  padding-left: 540px;
+}
+.nav2 .banxin2 .ul-f > li .div-t4 img {
+  width: 60px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+.nav2 .banxin2 .ul-f > li .div-t4 > ul > li {
+  padding: 20px 40px;
+}
+.nav2 .banxin2 .ul-f > li .div-t4 > ul > li:after {
+  content: '';
+  height: 55px!important;
+  top: 30!important;
+}
+#carousel {
+  margin: auto;
+  /* 居中 */
+  width: 100%;
+  /* 设置宽度 */
+  position: relative;
+  /* 相对定位 */
+  overflow: hidden;
+  /* 超出隐藏 */
+  height: 450px!important     ;
+}
+#carousel img {
+  width: 1920px;
+  /* 设定大小 按比例缩放 */
+  height: 450px;
+}
+#carousel > ul {
+  display: flex;
+  /* 图片处理为一行 */
+  position: absolute;
+  /* 设置绝对定位，实现相对于#carousel的绝对定位 */
+}
+#carousel > ul,
+#carousel > ul > li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* 控制按钮的样式 */
+#leftArrow,
+#rightArrow {
+  position: absolute;
+  left: 105px;
+  top: 43%;
+  width: 25px;
+  height: 30px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 20px;
+  cursor: pointer;
+}
+#rightArrow {
+  left: auto;
+  right: 105px;
+}
+#sliderBtn {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  text-align: center;
+}
+.unitBtn {
+  width: 18px;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+.active {
+  background-color: red;
+}
+.banxin3 {
+  overflow: hidden;
+  width: 1180px;
+  margin: auto;
+}
+.banxin3 h2 {
+  display: inline-block;
+  margin: 30px 10px 30px 0;
+  padding-bottom: 40px;
+}
+.banxin3 span {
+  display: inline-block;
+}
+.banxin3 .div-l {
+  float: left;
+  margin-right: 18px;
+}
+.banxin3 .div-r {
+  float: left;
+}
+.banxin3 .div-r .swiper-button-prev::after {
+  color: black;
+}
+.banxin3 .div-r .swiper-button-next::after {
+  color: black;
+}
+.banxin4 {
+  width: 1180px;
+  margin: auto;
+}
+.banxin4 h2,
+.banxin4 .a-top {
+  display: inline-block;
+  margin: 30px 10px 30px 0;
+}
+.banxin4 span {
+  display: inline-block;
+}
+.banxin4 .icon-arrow-right {
+  display: inline-block !important;
+  margin-top: 3px;
+  padding-left: 3px;
+  font-size: 10px;
+}
+.banxin4 .a-top {
+  vertical-align: middle;
+  float: right;
+}
+.banxin4 .a-top:hover {
+  color: red;
+}
+.banxin4 .div-f .ul-f {
+  overflow: hidden;
+  padding: 6px 3px;
+}
+.banxin4 .div-f .ul-f li {
+  float: left;
+  text-align: center;
+  width: 293px!important;
+}
+.banxin4 .div-f .ul-f li img {
+  display: inline-block;
+}
+.banxin4 .div-f .ul-f li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 2px  white;
+}
+.banxin4 .div-f .ul-f li a {
+  height: 300px;
+}
+.banxin4 .div-f .ul-f li a :nth-child(3) {
+  font-size: 14px;
+  display: block;
+  margin: 8px auto;
+}
+.banxin4 .div-f .ul-f li a :nth-child(4) {
+  color: red;
+}
+.banxin4 .div-bt {
+  margin-top: 19px;
+  margin-bottom: 10px;
+}
+.banxin4 .div-bt img {
+  display: block;
+}
+.banxin4 .div-f2 .ul-ff {
+  overflow: hidden;
+  padding: 6px 3px;
+  padding-top: 10px;
+}
+.banxin4 .div-f2 .ul-ff li {
+  float: left;
+  text-align: center;
+  width: 293px!important;
+  position: relative;
+}
+.banxin4 .div-f2 .ul-ff li .icon-play {
+  position: absolute;
+  top: 190px;
+  left: 50px;
+  font-size: 36px;
+  color: wheat!important;
+}
+.banxin4 .div-f2 .ul-ff li img {
+  display: inline-block;
+}
+.banxin4 .div-f2 .ul-ff li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 2px 2px  white;
+}
+.banxin4 .div-f2 .ul-ff li a {
+  height: 300px;
+}
+.banxin4 .div-f2 .ul-ff li a :nth-child(2) {
+  font-size: 14px;
+  display: block;
+  margin: 12px auto;
+}
+.banxin4 .div-f2 .ul-ff li a :nth-child(3) {
+  font-size: 14px;
+  display: block;
+  margin: 8px auto;
+}
+.banxin4 .div-f2 .ul-ff li a :nth-child(4) {
+  color: red;
+}
+.banxin4 .div-f2 .ul-f {
+  overflow: hidden;
+  padding: 6px 3px;
+  padding-top: 10px;
+}
+.banxin4 .div-f2 .ul-f li {
+  float: left;
+  text-align: center;
+  width: 293px!important;
+  position: relative;
+}
+.banxin4 .div-f2 .ul-f li .icon-play {
+  position: absolute;
+  top: 190px;
+  left: 50px;
+  font-size: 36px;
+  color: wheat!important;
+}
+.banxin4 .div-f2 .ul-f li img {
+  display: inline-block;
+}
+.banxin4 .div-f2 .ul-f li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 2px 2px  white;
+}
+.banxin4 .div-f2 .ul-f li a {
+  height: 300px;
+}
+.banxin4 .div-f2 .ul-f li a :nth-child(2) {
+  font-size: 14px;
+  display: block;
+  margin: 12px auto;
+}
+.banxin4 .div-f2 .ul-f li a :nth-child(3) {
+  font-size: 14px;
+  display: block;
+  margin: 8px auto;
+}
+.banxin4 .div-f2 .ul-f li a :nth-child(4) {
+  color: red;
+}
+.banxin5 {
+  overflow: hidden;
+  width: 1180px;
+  margin: 0 auto;
+  border-bottom: 1px solid wheat;
+  padding-bottom: 30px;
+}
+.banxin5 .div-o {
+  float: left;
+  width: 580px;
+}
+.banxin5 .div-o h2 {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 35px;
+  padding-top: 25px;
+}
+.banxin5 .div-o .ul-o > li {
+  float: left;
+  margin: 0 25px;
+  text-align: center;
+}
+.banxin5 .div-o .ul-o > li i {
+  font-size: 38px;
+}
+.banxin5 .div-o .ul-o > li span {
+  display: block;
+  margin: 20px auto;
+}
+.banxin5 .div-tw {
+  float: left;
+  border-left: whitesmoke 2px solid;
+  border-right: whitesmoke 2px solid;
+  width: 360px;
+}
+.banxin5 .div-tw h2 {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 1px;
+  padding-top: 25px;
+}
+.banxin5 .div-tw .ul-tw li {
+  float: left;
+  padding-top: 25px;
+  margin-left: 45px;
+  text-align: center;
+}
+.banxin5 .div-tw .ul-tw li img {
+  display: block;
+  padding-bottom: 10px;
+}
+.banxin5 .div-th {
+  float: left;
+  padding-top: 25px;
+}
+.banxin5 .div-th .div-top li {
+  float: left;
+  text-align: center;
+}
+.banxin5 .div-th .div-top i {
+  font-size: 32px;
+}
+.banxin5 .div-th .div-top span {
+  display: block;
+  margin: 0px auto;
+  margin-left: 18px;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 19px;
+}
+.banxin5 .div-th .div-bot {
+  text-align: center;
+}
+.banxin5 .div-th .div-bot .span-bl {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: auto!important;
+  padding-top: 13px;
+  padding-bottom: 8px;
+}
+.banxin5 .div-f {
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+}
+.banxin5 .div-f ul {
+  border: 1px solid wheat;
+}
+.banxin5 .div-f ul li {
+  text-align: center;
+  padding: 2px 10px 12px;
+}
+.banxin5 .div-f ul li:nth-child(1) {
+  padding-top: 11px;
+}
+.banxin5 .div-f ul li:nth-child(4) {
+  padding-top: 35px;
+}
+.banxin5 .div-f ul li:nth-child(4) span {
+  border-bottom: 0px solid wheat;
+}
+.banxin5 .div-f span {
+  display: block;
+  border-bottom: 1px solid wheat;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+.banxin5 .div-f i {
+  font-size: 38px;
+}
+.footer {
+  width: 1180px;
+  margin: auto;
+}
+.footer ul {
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 3px;
+  padding-top: 53px;
+}
+.footer a {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+.footer > div {
+  color: #8c8c8c;
+  font-size: 12px!important;
+  text-align: center;
+  padding: 20px 0 40px 0 !important ;
+}
+body {
+  position: relative;
+}
+body .zhuce {
+  width: 400px;
+  height: 420px;
+  position: absolute;
+  top: 135px;
+  right: 100px;
+  background: #f6f6f7;
+}
+.banxin-shop .box-t-r {
+  padding-left: 25px;
+  width: 630px;
+}
+.banxin-shop .box-t-r > h2 {
+  padding-bottom: 24px;
+  padding-top: 15px;
+  font-size: 28px;
+}
+.banxin-shop .box-t-r .span-yuan {
+  font-size: 28px;
+  color: red;
+}
+.banxin-shop .box-t-r .i-shuliang {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.banxin-shop .box-t-r .box-shuliang {
+  padding-bottom: 30px;
+}
+.banxin-shop .box-t-r .box-shuliang span {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: wheat 1px solid;
+  text-align: center;
+  line-height: 48px;
+  font-size: 28px;
+  vertical-align: middle;
+}
+.banxin-shop .box-t-r .box-shuliang i {
+  vertical-align: middle;
+  display: inline-block;
+  width: 70px;
+  height: 48px;
+  border: wheat 1px solid;
+  text-align: center;
+  line-height: 48px;
+  font-size: 24px;
+}
+.banxin-shop .box-t-r #additem {
+  padding-top: 15px;
+  border: red 1px solid;
+  color: red;
+  font-size: 28px;
+  padding: 2px;
+}
+.banxin-car {
+  width: 1180px;
+  margin: 0 auto;
+  border: 1px solid wheat;
+  padding-top: 20px;
+}
+.banxin-car .ul-t {
+  border: wheat 1px solid;
+  overflow: hidden;
+}
+.banxin-car .ul-t li {
+  float: left;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.banxin-car .itemllist {
+  overflow: hidden;
+}
+.banxin-car .itemllist li {
+  float: left;
+  text-align: center;
+}
+.banxin-car .itemllist li:nth-child(1) {
+  width: 85px;
+  height: 130px;
+  line-height: 130px;
+  padding-left: 20px;
+}
+.banxin-car .itemllist li:nth-child(2) {
+  width: 400px;
+}
+.banxin-car .itemllist li h2 {
+  display: inline-block;
+  font-size: 16px;
+  width: 250px;
+  height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-box-orient: vertical-align;
+}
+.banxin-car .itemllist img {
+  width: 98px;
+  height: 98px;
+  padding: 20px 10px 0 0px;
+  vertical-align: middle;
+}

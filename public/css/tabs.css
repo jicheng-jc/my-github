@@ -1,0 +1,51 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tabs {
+  width: 500px;
+  height: 600px;
+  margin-top: 10px;
+  position: relative;
+}
+.tabs > ul {
+  list-style: none;
+  overflow: hidden;
+  width: 498px;
+  padding-top: 15px;
+}
+.tabs > ul > li {
+  float: left;
+  /* width: 130px; */
+  line-height: 35px;
+  border: 1px solid black;
+  margin: 3px 17px;
+  text-align: center;
+  font-size: 1.1em;
+ 
+  
+  user-select: none;
+  cursor: pointer;
+}
+.tabs > ul > li img{
+  display: block;
+}
+.tabs > ul > li.active {
+  border: 2px solid red;
+}
+.tabs > div {
+  
+  /* margin: 10px auto 0; */
+  display: none;
+}
+.tabs > div.show {
+  display: block;
+}
+.banxin-shop{
+  width: 1180px;
+  margin: 0 auto;
+  border-top: wheat 2px solid;
+  padding-top: 15px;
+}
